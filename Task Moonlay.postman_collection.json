@@ -1,0 +1,367 @@
+{
+	"info": {
+		"_postman_id": "aa92abb4-f428-4357-a820-e22cb6c8716d",
+		"name": "Task Moonlay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List",
+			"item": [
+				{
+					"name": "Get All List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5050/api/v1/list?title=spasi&page=1&pageSize=1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5050",
+							"path": [
+								"api",
+								"v1",
+								"list"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "spasi"
+								},
+								{
+									"key": "deskripsi",
+									"value": "Senin",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5050/api/v1/list/4",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5050",
+							"path": [
+								"api",
+								"v1",
+								"list",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "TIdakBolehSpasiLagi",
+									"type": "default"
+								},
+								{
+									"key": "deskripsi",
+									"value": "Hari Rabu",
+									"type": "default"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/yogawicaksono/Downloads/20230815_113844.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:5050/api/v1/list",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5050",
+							"path": [
+								"api",
+								"v1",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update List",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "YohBisaYoh",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:5050/api/v1/list/3",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5050",
+							"path": [
+								"api",
+								"v1",
+								"list",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete List",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5050/api/v1/list/5",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5050",
+							"path": [
+								"api",
+								"v1",
+								"list",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Test API List Moonlay"
+		},
+		{
+			"name": "Sub-List",
+			"item": [
+				{
+					"name": "Get All Sub_List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5050/api/v1/sub_list?title=apa",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5050",
+							"path": [
+								"api",
+								"v1",
+								"sub_list"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "apa"
+								},
+								{
+									"key": "deskripsi",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "pageSize",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sub_List by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5050/api/v1/sub_list/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5050",
+							"path": [
+								"api",
+								"v1",
+								"sub_list",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Sub_List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Mobilan",
+									"type": "default"
+								},
+								{
+									"key": "deskripsi",
+									"value": "Bingung",
+									"type": "default"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/yogawicaksono/Downloads/pdf-pedoman-pengorganisasian-komite-etik-dan-hukum_compress.pdf"
+								},
+								{
+									"key": "list_id",
+									"value": "4",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:5050/api/v1/sub_list",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5050",
+							"path": [
+								"api",
+								"v1",
+								"sub_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Sub_List",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/yogawicaksono/Downloads/pdf-168-pedoman-pengorganisasian-komite-medik_compress.pdf"
+								},
+								{
+									"key": "list_id",
+									"value": "3",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:5050/api/v1/sub_list/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5050",
+							"path": [
+								"api",
+								"v1",
+								"sub_list",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Sub_LIst",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5050/api/v1/sub_list/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5050",
+							"path": [
+								"api",
+								"v1",
+								"sub_list",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Test API Sub_List Moonlay"
+		}
+	]
+}
