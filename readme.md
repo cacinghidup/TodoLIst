@@ -4,7 +4,9 @@ Easy to set-up
 Clone this repository, then cd backend
 
 Please ensure you have PostgreSQL or MySql
+
 Check in /pkg/mysql/mysql.go
+
 Change the dsn with your database credential
 
 after that 
